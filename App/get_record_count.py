@@ -2,8 +2,8 @@ from bitestdb_connection import *
 
 schema = 'PhetsavongR'
 table = 'test_a'
-sql_statement = '''select * from {}.{}.{}'''.format(db,schema,table)
-#sql_statement = '''select * from {}.{}.{} where Hyperion = 2571'''.format(db,schema,table)
+#sql_statement = '''select * from {}.{}.{}'''.format(db,schema,table)
+sql_statement = '''select * from {}.{}.{} where Hyperion = 2571'''.format(db,schema,table)
 
 # Get Current Count of records before import
 def getCurrentCountFromDB(query, engine):
